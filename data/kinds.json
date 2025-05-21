@@ -1,0 +1,27 @@
+{
+  "kinds": [
+    "Certificate",
+    "Cluster",
+    "ConfigMap",
+    "CronJob",
+    "Deployment",
+    "ElasticsearchCluster",
+    "EtcdCluster",
+    "FoundationDBCluster",
+    "HorizontalPodAutoscaler",
+    "Job",
+    "MantaFlow",
+    "NetworkPolicy",
+    "PersistentVolumeClaim",
+    "Pod",
+    "ReplicaSet",
+    "Route",
+    "Secret",
+    "Service",
+    "StatefulSet",
+    "VerticalPodAutoscaler",
+    "WXD",
+    "ZenExtension",
+    "serviceaccount"
+  ]
+}
