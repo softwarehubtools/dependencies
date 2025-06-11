@@ -1,5 +1,6 @@
 {
   "kinds": [
+    "<kind>",
     "Certificate",
     "Cluster",
     "ConfigMap",
@@ -15,6 +16,9 @@
     "PersistentVolumeClaim",
     "Pod",
     "ReplicaSet",
+    "ReplicationExtension",
+    "ReplicationService",
+    "ReplicationServiceInstance",
     "Route",
     "Secret",
     "Service",
@@ -22,6 +26,8 @@
     "VerticalPodAutoscaler",
     "WXD",
     "ZenExtension",
+    "horizontalpodautoscalers",
+    "nodepool",
     "serviceaccount"
   ]
 }
