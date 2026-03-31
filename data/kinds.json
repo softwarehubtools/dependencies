@@ -1,6 +1,5 @@
 {
   "kinds": [
-    "<kind>",
     "Certificate",
     "Cluster",
     "ConfigMap",
