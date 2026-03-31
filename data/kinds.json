@@ -1,5 +1,6 @@
 {
   "kinds": [
+    "<kind>",
     "Certificate",
     "Cluster",
     "ConfigMap",
@@ -26,12 +27,17 @@
     "ServiceAccount",
     "StatefulSet",
     "VerticalPodAutoscaler",
+    "Volume",
     "WXD",
     "ZenExtension",
     "cluster.postgresql.k8s.enterprisedb.io",
     "elasticsearch-master",
+    "endpoints",
     "horizontalpodautoscalers",
+    "inferenceservice",
     "nodepool",
-    "serviceaccount"
+    "operandrequest",
+    "serviceaccount",
+    "wcaansible"
   ]
 }
