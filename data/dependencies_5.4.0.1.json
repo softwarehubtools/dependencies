@@ -11133,7 +11133,7 @@
         {
           "name": "redis-ha-server",
           "kind": "Pod",
-          "short_description": "A distributed, in-memory key–value database used for caching.",
+          "short_description": "A distributed, in-memory key\u2013value database used for caching.",
           "long_description": "Redis is a in-memory database used mainly for caching platform data such as user session and asset preview data.",
           "troubleshooting": []
         },
@@ -11695,7 +11695,7 @@
           "long_description": "Provides the ability to create connections and custom datasource types, retrieve lists of those connections and datasource types along with predefined datasource types, retrieve metadata about data assets including basic preview information.",
           "troubleshooting": [
             "If the pod is down, it will impact the Global Search functionality and UI pages that rely on Global Search to retrieve data such as the Categories page.",
-            "Users may see an error message - The search query didn’t run. Try rephrasing your search or try the search again later.",
+            "Users may see an error message - The search query didn\u2019t run. Try rephrasing your search or try the search again later.",
             "Check the pod logs for any error messages or warnings. Check status of dependencies using the /v3/search/heartbeat?dependencyChk=true API.",
             "If any of the dependencies are not in ok status, check their pods and pod logs."
           ],
@@ -17835,7 +17835,7 @@
       "k8s_objects": [
         {
           "name": "wspipelines-cr",
-          "kind": "wspipelines",
+          "kind": "WSPipelines",
           "short_description": "The WS Pipelines Custom Resource.",
           "long_description": "The WS Pipelines Custom Resource contains the custom resource for the WS Pipelines service.",
           "troubleshooting": [],
@@ -19562,7 +19562,7 @@
         "Datagate Instance"
       ],
       "short_description": "Synchronize data between Db2 for z/OS and the backend database",
-      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson™ Knowledge Catalog for metadata management.",
+      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson\u2122 Knowledge Catalog for metadata management.",
       "k8s_objects": [
         {
           "name": "dg-<InstanceID>-data-gate-iceberg-server",
@@ -19586,7 +19586,7 @@
         "Datagate Instance"
       ],
       "short_description": "Synchronize data between Db2 for z/OS and the backend database",
-      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson™ Knowledge Catalog for metadata management.",
+      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson\u2122 Knowledge Catalog for metadata management.",
       "k8s_objects": [
         {
           "name": "dg-<InstanceID>-data-gate",
@@ -19749,7 +19749,7 @@
         "Datagate Instance"
       ],
       "short_description": "Synchronize data between Db2 for z/OS and the Db2 backend database",
-      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson™ Knowledge Catalog for metadata management.",
+      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson\u2122 Knowledge Catalog for metadata management.",
       "k8s_objects": [
         {
           "name": "dg-<InstanceID>-ui",
@@ -19801,7 +19801,7 @@
         "Datagate Instance"
       ],
       "short_description": "Synchronize data between Db2 for z/OS and the Db2 backend database",
-      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson™ Knowledge Catalog for metadata management.",
+      "long_description": "The Db2 Data Gate instance enables data synchronization between Db2 for z/OS and the Db2 database on Cloud Pak for Data in near real time. It also provides the capability to integrate Watson\u2122 Knowledge Catalog for metadata management.",
       "k8s_objects": [
         {
           "name": "dg-<InstanceID>-backup-head-job",
@@ -21118,7 +21118,7 @@
         "Data Management Console",
         "Service"
       ],
-      "short_description": "Admin enables users to explore integrated databases and also allows user to load data from local file system, Amazon S3, and IBM Cloud® Object Storage",
+      "short_description": "Admin enables users to explore integrated databases and also allows user to load data from local file system, Amazon S3, and IBM Cloud\u00ae Object Storage",
       "k8s_objects": [
         {
           "name": "ibm-dmc-<InstanceID>-admin-<AutoGeneratedID1>-<AutoGeneratedID2>",
@@ -24520,24 +24520,24 @@
           "name": "informix-<InstanceID>-monitor-service",
           "kind": "Service",
           "short_description": "A service providing load balancing for the Informix Monitor service instance.",
-          "troubleshooting:": [
-            "Check to make sure the service instance exists.",
-            "Please contact IBM support."
-          ],
           "dependency": [
             "informix/Informix/Server"
+          ],
+          "troubleshooting": [
+            "Check to make sure the service instance exists.",
+            "Please contact IBM support."
           ]
         },
         {
           "name": "informix-<InstanceID>-aux-monitoring-cm",
           "kind": "ConfigMap",
           "short_description": "Config map defining the Informix zen alert events.",
-          "troubleshooting:": [
-            "Check to make sure the config map exists.",
-            "Please contact IBM support."
-          ],
           "dependency": [
             "informix/Informix/Server"
+          ],
+          "troubleshooting": [
+            "Check to make sure the config map exists.",
+            "Please contact IBM support."
           ]
         }
       ]
@@ -24570,7 +24570,7 @@
             "Check the pod logs for any error messages or warnings.",
             "Ensure pods are not in pending state due to unavailable request cpu and memory. Please contact IBM support."
           ],
-          "depencency": []
+          "dependency": []
         },
         {
           "name": "informix-<InstanceID>-hlservice",
@@ -24580,7 +24580,7 @@
             "Check to make sure the service instance exists.",
             "Ensure pods are not in pending state due to unavailable request cpu and memory. Please contact IBM support."
           ],
-          "depencency": []
+          "dependency": []
         },
         {
           "name": "informix-<InstanceID>-audit-config",
@@ -25907,7 +25907,7 @@
       "k8s_objects": [
         {
           "name": "foundationdb",
-          "kind": "foundationdbcluster",
+          "kind": "FoundationDBCluster",
           "short_description": "FDB cluster",
           "long_description": "FDB cluster is the database that provides key-value database service in a cluster mode, it will generate a number of pods which function as different role like storage/log/controller/backup/restore.   The log/storage/backup will have pvc created for them.  restore pod only appears if the cluster enter restore mode.",
           "troubleshooting": [
@@ -34964,7 +34964,7 @@
           "name": "spark-hb-br-recovery-859dc8d94d-k8vkj",
           "kind": "Pod",
           "short_description": "Pod for Spark BR recovery.",
-          "long_description": "This pod is responsible for managing the recovery process of Spark’s BR (Block Recovery) components.",
+          "long_description": "This pod is responsible for managing the recovery process of Spark\u2019s BR (Block Recovery) components.",
           "troubleshooting": [
             "Check the pod logs for any error messages or warnings"
           ]
@@ -35072,7 +35072,7 @@
           "name": "spark-hb-kernel-cleanup-cron-29032710-vz9r2",
           "kind": "Pod",
           "short_description": "Pod for cleaning up kernel resources in Spark.",
-          "long_description": "Ensures that expired or unused kernel resources are cleaned up to maintain Spark’s efficiency.",
+          "long_description": "Ensures that expired or unused kernel resources are cleaned up to maintain Spark\u2019s efficiency.",
           "troubleshooting": [
             "Check the pod logs for any error messages or warnings"
           ]
@@ -42424,7 +42424,7 @@
       "k8s_objects": [
         {
           "name": "lakehouse",
-          "kind": "wxd",
+          "kind": "WXD",
           "short_description": "Custom resource defining the watsonx.data service instance",
           "troubleshooting": []
         }
@@ -43735,7 +43735,7 @@
       "scope": [
         "Watsonx AI"
       ],
-      "short_description": "Guardrails 2.0 — content safety detectors and orchestrator for watsonx AI inference.",
+      "short_description": "Guardrails 2.0 \u2014 content safety detectors and orchestrator for watsonx AI inference.",
       "long_description": "Deploys the watsonx AI Guardrails framework including the FMS orchestrator, governance detectors (PII, HAP, faithfulness, answer relevance, context relevance, prompt injection, off-topic), wxgov-guardrails, model install jobs, and supporting infrastructure",
       "k8s_objects": [
         {
@@ -50525,7 +50525,7 @@
         "WKC"
       ],
       "short_description": "InstDB is a lightweight embedded database engine designed for speed, simplicity, and ease of integration into modern applications.",
-      "long_description": "InstDB is a fast, lightweight, and embeddable database engine designed for easy integration and minimal setup. It supports ACID transactions, in-memory modes, and flexible schemas—making it ideal for desktop, mobile, and IoT applications.",
+      "long_description": "InstDB is a fast, lightweight, and embeddable database engine designed for easy integration and minimal setup. It supports ACID transactions, in-memory modes, and flexible schemas\u2014making it ideal for desktop, mobile, and IoT applications.",
       "k8s_objects": [
         {
           "name": "c-db2oltp-wkc-instdb",
@@ -51979,7 +51979,7 @@
       "k8s_objects": [
         {
           "name": "foundationdb",
-          "kind": "foundationdbcluster",
+          "kind": "FoundationDBCluster",
           "short_description": "FDB cluster",
           "long_description": "FDB cluster is the database that provides key-value database service in a cluster mode, it will generate a number of pods which function as different role like storage/log/controller/backup/restore.   The log/storage/backup will have pvc created for them.  restore pod only appears if the cluster enter restore mode.",
           "troubleshooting": [
@@ -52709,7 +52709,6 @@
         "Model runtimes"
       ],
       "short_description": "Responsible for runtime deployments of ML/DL models",
-      "long description": "Bifurcated into 3: Online, batch and Rshiny, each providing their own functionalities during runtime",
       "k8s_objects": [
         {
           "name": "wmlruntimesdefinitions",
@@ -52771,7 +52770,8 @@
             ""
           ]
         }
-      ]
+      ],
+      "long_description": "Bifurcated into 3: Online, batch and Rshiny, each providing their own functionalities during runtime"
     },
     {
       "addOnId": "wml",
